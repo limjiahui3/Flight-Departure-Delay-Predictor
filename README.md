@@ -1,18 +1,16 @@
 # Flight Departure Delay Predictor
 
+**Project Goal:** Develop a supervised classification model to predict whether a flight will be delayed (delay >= 15 minutes) based on weather and flight-related features. Explore both LSTM and XGBoost models to evaluate performance across temporal and tabular data.
+
 **Programming Language:** Python
 
 **Framework:** PyTorch
-
-## Overview
-
-**Project Goal:** Develop a supervised classification model to predict whether a flight will be delayed (delay >= 15 minutes) based on weather and flight-related features. Explore both LSTM and XGBoost models to evaluate performance across temporal and tabular data.
 
  **Models:** LSTM (Long Short-Term Memory), XGBoost
 
 **Evaluation Metric:** F1-score
 
-## Data Preprocessing
+## Overview
 
 **Weather Data Source:** https://observablehq.com/@observablehq/noaa-weather-data-by-major-u-s-city
 
@@ -36,21 +34,15 @@
 - Categorical encoding
 - Weather window extraction
 
-## Key Evaluation Steps & Insights
-
+**Key Evaluation Steps & Insights:**
 - Threshold tuning for F1-score
-
-**Model Results:**
-- LSTM model (5-hour weather sequences) and XGBoost model (same sequences flattened into fixed-length vectors) both achieved ~0.32 F1-score
-- Suggests temporal dependencies within the 5-hour weather window may not be significant, or models failed to capture them effectively
-
-**Observations:**
-- Low F1-score indicates need for more informative features
-- Basic weather and flight features alone may be insufficient to model flight delay causation
-
-**Potential improvements:**
-- Incorporate additional flight-level and operational features (e.g., airport congestion, airline schedules, prior flight delays)
-- Further tune model architectures and preprocessing strategies
+- Model Results:
+  - LSTM model (5-hour weather sequences) and XGBoost model (same sequences flattened into fixed-length vectors) both achieved ~0.32 F1-score
+  - Suggests temporal dependencies within the 5-hour weather window may not be significant, or models failed to capture them effectively
+  - Indicates need for more informative features; basic weather and flight features alone may be insufficient to model flight delay causation
+- Potential improvements:
+  - Incorporate additional flight-level and operational features (e.g., airport congestion, airline schedules, prior flight delays)
+  - Further tune model architectures and preprocessing strategies
 
 ## Files
 - `Flight_Departure_Delay_Predictor.ipynb`: Data preprocessing, model training, tuning, and evaluation
