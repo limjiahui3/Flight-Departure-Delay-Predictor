@@ -10,7 +10,7 @@
 
  **Models:** LSTM (Long Short-Term Memory), XGBoost
 
-**Evaluation Metrics:** F1-score
+**Evaluation Metric:** F1-score
 
 ## Data Preprocessing
 
