@@ -40,7 +40,7 @@
   - LSTM model (5-hour weather sequences) and XGBoost model (same sequences flattened into fixed-length vectors) both achieved ~0.32 F1-score
   - Suggests temporal dependencies within the 5-hour weather window may not be significant, or models failed to capture them effectively
   - Indicates need for more informative features; basic weather and flight features alone may be insufficient to model flight delay causation
-- Potential improvements:
+- Potential Improvements:
   - Incorporate additional flight-level and operational features (e.g., airport congestion, airline schedules, prior flight delays)
   - Further tune model architectures and preprocessing strategies
 
