@@ -1,5 +1,9 @@
 # Flight Departure Delay Predictor
 
+**Programming Language:** Python
+
+**Framework:** PyTorch
+
 ## Overview
 
 **Project Goal:** Develop a supervised classification model to predict whether a flight will be delayed (delay >= 15 minutes) based on weather and flight-related features. Explore both LSTM and XGBoost models to evaluate performance across temporal and tabular data.
